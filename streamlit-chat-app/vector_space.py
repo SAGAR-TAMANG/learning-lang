@@ -61,7 +61,7 @@ class FlowerShopVectorStore:
       metadatas = inventories
     )
     
-  def query_fqs(self, query:str):
+  def query_faqs(self, query:str):
     return self.faq_collections.query(query_texts=[query], n_results=5)
     
   def query_inventories(self, query:str):
